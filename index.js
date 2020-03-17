@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 
 // Config object
 const config = {
-	port: 3000
+	port = process.env.PORT || 3000
 }
 
 // Create new express app in 'app'
