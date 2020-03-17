@@ -1,0 +1,14 @@
+<form method="get" action="/search" class="search-form" id="searchForm">
+    <label for="vin">
+        Vin
+    </label>
+    <input type="search" id="vin" name="vinQuery">
+    <label for="modelYear">
+        Model Year
+    </label>
+    <input type="search" id="modelYear" name="yearQuery">
+    <button type="submit" form="searchForm">Search</button>
+    </form>
+    <h1><%= carInfo.Results[0].Make %></h1>
+    <p><%= carInfo.Results[0].Model %></p>
+    
