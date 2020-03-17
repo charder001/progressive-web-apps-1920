@@ -3,6 +3,9 @@
 ## What does this app do?
 The VinCheckup app allows the user to enter a vehicle VIN and build year in order to fetch information about that vehicle from a database using a fetch request.
 
+## What API does this app use?
+This app uses the vPic API which can be found at https://vpic.nhtsa.dot.gov/api/
+There is no limit to how many requests one user can make to the API, however, they do expect larger batch requests to be done in lower-traffic times. More information can be found here https://vpic.nhtsa.dot.gov/api/Home/Index/FAQ.
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
