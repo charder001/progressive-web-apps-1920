@@ -4,9 +4,11 @@ const request = require('request');
 const fetch = require("node-fetch");
 
 // Config object
-const config = {
-	port = process.env.PORT || 3000
-}
+// const config = {
+// 	port = process.env.PORT || 3000
+// }
+
+const port = process.env.PORT || 3000
 
 // Create new express app in 'app'
 const app = express();
@@ -94,6 +96,6 @@ app.get('/post', function(req, res) {
 });
 
 // Actually set up the server
-app.listen(config.port, function() {
-	console.log(`Application started on port: ${config.port}`);
+app.listen(port, function() {
+	console.log(`Application started on port: ${port}`);
 });
