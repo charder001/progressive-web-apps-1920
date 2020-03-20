@@ -11,7 +11,6 @@ There is no limit to how many requests one user can make to the API, however, th
 Right now the user can enter a VIN and a model year to fetch data from the API. This will navigate the user to a detail page where more information is displayed.
 
 ## To do
-- Add service worker
 - Use build tools
 - Make app installable
 - Add styling
