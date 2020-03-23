@@ -11,10 +11,15 @@ There is no limit to how many requests one user can make to the API, however, th
 Right now the user can enter a VIN and a model year to fetch data from the API. This will navigate the user to a detail page where more information is displayed.
 
 ## To do
-- Add service worker
 - Use build tools
 - Make app installable
 - Add styling
+
+## Feedback week 2
+3 Things to watch out for!
+1. My service worker works now! Yay :) I had some struggles getting it to work but it's there now.
+2. Now i need to find some use for the sevice worker, i'm thinking of implementing a cached versions of previous search queries.
+
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
