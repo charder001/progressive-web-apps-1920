@@ -20,20 +20,7 @@ app.use(express.static('public'));
 
 // Create a home route
 app.get('/', function(req, res) {
-	let vin = "2GKFL8E59C6255721"
-	let modelYear = "2012"
-	fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/${vin}*BA?format=json&modelyear=${modelYear}`)
-    .then(response => {
-      return response.json();
-    })
-
-    .then(data => {
-	  res.render("home", { carInfo:data })
-	console.log(data.Results[0].Make, data.Results[0].Model)
-    })
-    .catch(err => {
-      console.log(err);
-    });
+	  res.render("home")
 });
 
 //Return a detail result page after search containing API data
