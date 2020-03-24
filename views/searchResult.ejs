@@ -1,3 +1,4 @@
+<%- include("partials/head") %>
 <form method="get" action="/search" class="search-form" id="searchForm">
     <label for="vin">
         Vin
@@ -11,4 +12,5 @@
     </form>
     <h1><%= carInfo.Results[0].Make %></h1>
     <p><%= carInfo.Results[0].Model %></p>
+    <%- include("partials/footer") %>
     

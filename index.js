@@ -3,11 +3,7 @@ const express = require('express');
 const request = require('request');
 const fetch = require("node-fetch");
 
-// Config object
-// const config = {
-// 	port = process.env.PORT || 3000
-// }
-
+//config port for heroku and local use
 const port = process.env.PORT || 3000
 
 // Create new express app in 'app'
@@ -40,6 +36,7 @@ app.get('/', function(req, res) {
     });
 });
 
+//Return a detail result page after search containing API data
 app.get('/search', function(req, res) {
 	let modelYear = "2010"
 	fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/${req.query.vinQuery}*BA?format=json&modelyear=${req.query.yearQuery}`)
@@ -57,7 +54,7 @@ app.get('/search', function(req, res) {
 });
 
 
-// Actually set up the server
+// Set up server
 app.listen(port, function() {
 	console.log(`Application started on port: ${port}`);
 });
