@@ -34,11 +34,11 @@ Right now the user can enter a VIN and a model year to fetch data from the API. 
 `npm run`
 
 ## Learning goals
-1. I understand the difference between client side and server side renderen and can apply server side rendering by showing data from an API.
+**1. I understand the difference between client side and server side renderen and can apply server side rendering by showing data from an API.
 
-2. I understand the ins and outs of a service worker and can apply them in my application in a meaningful manner.
+**2. I understand the ins and outs of a service worker and can apply them in my application in a meaningful manner.
 
-3. I understand how the critical render path works and how it can be optimized.
+**3. I understand how the critical render path works and how it can be optimized.
 
 ## To do
 * Add google images API to load in images of vehicles
