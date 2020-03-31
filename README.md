@@ -49,14 +49,15 @@ A service worker acts like a proxy between the client and the server. Using serv
 In my application, the service worker caches all visited pages, which allows them to be viewed offline. When the user has no internet connection, the website will still have some use!
 
 **3. I understand how the critical render path works and how it can be optimized.**
+
 The critical rendering path is the steps a browser goes through to convert HTML, CSS and JavaScript into pixels on the screen. The reason we optimize the critical render path is to improve the render speed of our application.
 
 We can optimize the critical render path by for example
-* Concatenating
-* Minify-ing
-* Compression
-* Reducing image sized
-* Optimizing load order
+* Concatenating files to reduce the amount of calls to the server
+* Minify-ing your files to reduce unnecessary characters
+* Compress the files that you send to the client, which can be uncompressed on arrival
+* Reducing image sizes by downscaling the resolution or using different kinds of compression
+* Optimizing load order so the most critical files arrive to the client first
 
 In my Application, I have optmized the critical render path by concatenating and minify-ing my CSS files by using gulp and npm scripts as my task runner.
 
