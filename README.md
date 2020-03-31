@@ -33,6 +33,10 @@ Right now the user can enter a VIN and a model year to fetch data from the API. 
 
 `npm run`
 
+## Audit
+![audit](https://user-images.githubusercontent.com/43436118/78039525-83059780-736e-11ea-879c-51da07303e54.PNG)
+
+
 ## Learning goals
 **1. I understand the difference between client side and server side rendering and can apply server side rendering by showing data from an API.**
 
