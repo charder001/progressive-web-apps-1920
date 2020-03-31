@@ -1,16 +1,16 @@
 <%- include("partials/head") %>
-<h1>VinCheckUp</h1>
+<a href="/">VinCheckUp</a>
 <p>Enter a vehicle VIN and model year to receive vehicle information</p>
 <p>Example VIN: 5UXWX7C5*BA Model year: 2011</p>
 <form method="get" action="/search" class="search-form" id="searchForm">
 <label for="vin">
     Vin
 </label>
-<input type="search" id="vin" name="vinQuery">
+<input type="search" id="vin" name="vinQuery" required>
 <label for="modelYear">
     Model Year
 </label>
-<input type="search" id="modelYear" name="yearQuery">
+<input type="search" id="modelYear" name="yearQuery" required>
 <button type="submit" form="searchForm">Search</button>
 </form>
 <%- include("partials/footer") %>

@@ -1,5 +1,5 @@
 <%- include("partials/head") %>
-<a href="/">Home</a> 
+<a href="/">VinCheckUp</a>
 <form method="get" action="/search" class="search-form" id="searchForm">
     <label for="vin">
         Vin
@@ -12,11 +12,14 @@
     <button type="submit" form="searchForm">Search</button>
     </form>
     <h1><%= carInfo.Results[0].ModelYear %> <%= carInfo.Results[0].Make %> <%= carInfo.Results[0].Model %> <%= carInfo.Results[0].Trim %></h1>
-    <p>VIN: <%= carInfo.Results[0].VIN %></p>
-    <p>Origin: <%= carInfo.Results[0].PlantCountry %></p>
-    <p>Type: <%= carInfo.Results[0].VehicleType %></p>
-    <p>Power(HP): <%= carInfo.Results[0].EngineHP %></p>
-    <p>Displacement(L): <%= carInfo.Results[0].DisplacementL %></p>
-    <p>Cylinders: <%= carInfo.Results[0].EngineCylinders %></p>
+    <a href="https://www.google.com/search?tbm=isch&as_q=<%= carInfo.Results[0].ModelYear %>+<%= carInfo.Results[0].Make %>+<%= carInfo.Results[0].Model %>+<%= carInfo.Results[0].Trim %>" target="blank">Images</a>
+    <ul>
+    <li>VIN: <%= carInfo.Results[0].VIN %></li>
+    <li>Origin: <%= carInfo.Results[0].PlantCountry %></li>
+    <li>Type: <%= carInfo.Results[0].VehicleType %></li>
+    <li>Power(HP): <%= carInfo.Results[0].EngineHP %></li>
+    <li>Displacement(L): <%= carInfo.Results[0].DisplacementL %></li>
+    <li>Cylinders: <%= carInfo.Results[0].EngineCylinders %></li>
+    </ul>
     <%- include("partials/footer") %>
     

@@ -25,7 +25,6 @@ app.get('/', function(req, res) {
 
 //Return a detail result page after search containing API data
 app.get('/search', function(req, res) {
-	let modelYear = "2010"
 	fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/decodevinvalues/${req.query.vinQuery}*BA?format=json&modelyear=${req.query.yearQuery}`)
     .then(response => {
       return response.json();
