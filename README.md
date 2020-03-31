@@ -13,14 +13,23 @@ Right now the user can enter a VIN and a model year to fetch data from the API. 
 ## Installation
 1. Open your terminal
 2. Change directory to where you want to clone this repository, to the desktop for example
+
 `cd desktop` 
+
 3. Clone this repository
+
 `git clone https://github.com/charder001/progressive-web-apps-1920`
+
 4. Change direction into the newly created file
+
 `cd progressive-web-apps-1920`
+
 5. Install dependencies
+
 `npm install`
+
 6. Run application
+
 `npm run`
 
 ## To do
