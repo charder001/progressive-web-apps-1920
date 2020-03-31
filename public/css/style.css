@@ -1,7 +1,25 @@
-a {
-	display: block;
+body {
+	font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-	background-color:orange;
+form {
+	border: 1px solid grey;
+	padding: 1em;
+	width: 11em;
+}
+
+input {
+	display: block;
+	margin-bottom: .8em;
+}
+
+button {
+	background-color: #3366cc; /* Green */
+	border: none;
+	color: white;
+	padding: .5em 1em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
