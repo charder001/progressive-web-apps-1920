@@ -35,6 +35,7 @@ Right now the user can enter a VIN and a model year to fetch data from the API. 
 
 ## Learning goals
 **1. I understand the difference between client side and server side renderen and can apply server side rendering by showing data from an API.**
+My application is able to show the homepage and detail pages containing API data whilst JavaScript is turned off by using server side rendering. To achieve this, the server utilizes express routing to handle get requests and rendering the page before sending it out to the client.
 
 **2. I understand the ins and outs of a service worker and can apply them in my application in a meaningful manner.**
 
