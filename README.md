@@ -8,7 +8,7 @@ This app uses the vPic API which can be found at https://vpic.nhtsa.dot.gov/api/
 There is no limit to how many requests one user can make to the API, however, they do expect larger batch requests to be done in lower-traffic times. More information can be found here https://vpic.nhtsa.dot.gov/api/Home/Index/FAQ.
 
 ## Features
-Right now the user can enter a VIN and a model year to fetch data from the API. This will navigate the user to a detail page where more information is displayed.
+Right now the user can enter a VIN and a model year to fetch data from the API. This will navigate the user to a detail page where more information is displayed. The visited pages are placed in the cache using a service worker, so they are available for offline viewing. This app also contains a manifest, which allows user to install the app to their device. Lastly, the critical render path of this application is optimized by using gulp to minimize and concatenate the CSS files.
 
 ## Installation
 1. Open your terminal
