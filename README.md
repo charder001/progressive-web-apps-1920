@@ -33,7 +33,10 @@ Right now the user can enter a VIN and a model year to fetch data from the API. 
 `npm run`
 
 ## To do
-
+* Add google images API to load in images of vehicles
+* Expand on styling
+* Try out compressing files
+* Add recent searches section
 
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
