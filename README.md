@@ -36,11 +36,20 @@ Right now the user can enter a VIN and a model year to fetch data from the API. 
 ## Learning goals
 **1. I understand the difference between client side and server side renderen and can apply server side rendering by showing data from an API.**
 
-My application is able to show the homepage and detail pages containing API data whilst JavaScript is turned off by using server side rendering. To achieve this, the server utilizes express routing to handle get requests and rendering the page before sending it out to the client.
+With server side rendering, your HTML will get "made" before sending it out to the user. When moving between pages, the browser will make a new request from scratch to the server. One of the upsides to SSR is that the initial page load is faster than client side rendering, this makes them great for static sites. The downside, is that consecutive page loads are going to be slower, because the browser has to make request each time the page changes. 
+
+Client side rendering, however, renders content in the browser using JavaScript. The upside to this is that when the page changes, the browser does NOT have to make an entirely new request to the server, making for a faster website after the initial load.
+
+My application is able to show the homepage and detail pages containing API data whilst JavaScript is turned off by using server side rendering. To achieve this, the server utilizes express routing to handle get requests and rendering the page before sending it out to the client. This is great, because it allows the page to work when the user has JavaScript disabled or my JavaScript files don't (properly) load in.
 
 **2. I understand the ins and outs of a service worker and can apply them in my application in a meaningful manner.**
 
+A service worker acts like a proxy between the client and the server. Using service workers, we can (for example) intercept fetch requests and do all sorts of fun stuff with them. We could respond to the fetch request with files from our cache, compare different versions of our cache, show offline pages when fetch requests fail etc. 
+
+In my application, the service worker caches all visited pages, which allows them to be viewed offline. When the user has no internet connection, the website will still have some use!
+
 **3. I understand how the critical render path works and how it can be optimized.**
+
 
 ## To do
 * Add google images API to load in images of vehicles
