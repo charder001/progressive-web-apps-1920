@@ -1,7 +1,9 @@
 <%- include("partials/head") %>
-<a href="/">VinCheckUp</a>
-<p>Enter a vehicle VIN and model year to receive vehicle information</p>
-<p>Example VIN: 5UXWX7C5*BA Model year: 2011</p>
+<h1><a href="/">VinCheckUp</a></h1>
+<h2>Welcome to VinCheckup, enter a vehicle VIN and it's modelyear below to get more info about the vehicle.</h2>
+<main>
+<section>
+<!-- Example VIN: 5UXWX7C5*BA Model year: 2011 -->
 <form method="get" action="/search" class="search-form" id="searchForm">
 <label for="vin">
     Vin
@@ -13,4 +15,26 @@
 <input type="search" id="modelYear" name="yearQuery" required>
 <button type="submit" form="searchForm">Search</button>
 </form>
+</section>
+<section>
+    <h2>Hot vehicles</h2>
+    <ul>
+        <li>
+    <h3>2020 Ferrari 488 Pista</h3>
+    <img class="carImage" src="/images/488pista.jpg">
+    <p>ZFF90HLA3L0248921</p>
+</li>
+<li>
+    <h3>2020 Lamborghini Aventador SVJ</h3>
+    <img class="carImage" src="/images/aventador.jpg">
+    <p>ZHWEN6ZD3LLA09076</p>
+</li>
+<li>
+    <h3>2020 Rolly Royce Wraith</h3>
+    <img class="carImage" src="/images/wraith.jpg">
+    <p>SCAXZ0C01LU201362</p>
+</li>
+</ul>
+</section>
+</main>
 <%- include("partials/footer") %>

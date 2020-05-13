@@ -1,5 +1,7 @@
 <%- include("partials/head") %>
-<a href="/">VinCheckUp</a>
+<h1><a href="/">VinCheckUp</a></h1>
+<main>
+    <section>
 <form method="get" action="/search" class="search-form" id="searchForm">
     <label for="vin">
         Vin
@@ -11,7 +13,9 @@
     <input type="search" id="modelYear" name="yearQuery">
     <button type="submit" form="searchForm">Search</button>
     </form>
-    <h1><%= carInfo.Results[0].ModelYear %> <%= carInfo.Results[0].Make %> <%= carInfo.Results[0].Model %> <%= carInfo.Results[0].Trim %></h1>
+</section>
+<section>
+    <h2><%= carInfo.Results[0].ModelYear %> <%= carInfo.Results[0].Make %> <%= carInfo.Results[0].Model %> <%= carInfo.Results[0].Trim %></h2>
     <a href="https://www.google.com/search?tbm=isch&as_q=<%= carInfo.Results[0].ModelYear %>+<%= carInfo.Results[0].Make %>+<%= carInfo.Results[0].Model %>+<%= carInfo.Results[0].Trim %>" target="blank">Images</a>
     <ul>
     <li>VIN: <%= carInfo.Results[0].VIN %></li>
@@ -21,5 +25,7 @@
     <li>Displacement(L): <%= carInfo.Results[0].DisplacementL %></li>
     <li>Cylinders: <%= carInfo.Results[0].EngineCylinders %></li>
     </ul>
+</section>
+</main>
     <%- include("partials/footer") %>
     

@@ -1,25 +1,68 @@
 body {
 	font-family: 'Segoe UI', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(51, 51, 51);
+	color: white;
 }
+
+main {
+	margin: 1em;
+	display:flex;
+	justify-content: center;
+}
+
+h1 > a{
+	margin-left: 1em;
+}
+
+h2 {
+	margin: 1em;
+}
+
+section{
+	margin: 1em;
+
+}
+
+h1:first-of-type {
+	background-color: orange;
+	margin:0;
+}
+
 
 form {
 	border: 1px solid grey;
 	padding: 1em;
-	width: 11em;
+	width: 30em;
+}
+
+li {
+	border-bottom: 1px solid white;
 }
 
 input {
 	display: block;
+	width: 30em;
+	height: 3em;
 	margin-bottom: .8em;
 }
 
 button {
-	background-color: #3366cc; /* Green */
+	background-color: orange;
 	border: none;
-	color: white;
+	color: black;
 	padding: .5em 1em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
+}
+
+button:hover {
+	background-color: rgb(255, 188, 62);
+}
+
+.carImage {
+	width: 20em;
 }
